@@ -1,0 +1,35 @@
+.button {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #7761d9, #00d4df);
+    -fx-background-radius: 100px;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-effect: dropshadow(gaussian, #00d4df, 1, 1, 1, 1);
+}
+.button:pressed{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #6046d2, #00aab3);
+    -fx-background-radius: 100px;
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-background-radius: 100px;
+}
+
+.list-view{
+    -fx-border-radius: 100px;
+    -fx-font-family: Verdana;
+    -fx-font-size: 17px;
+    -fx-background-color: white;
+    /*-fx-padding: 10px;*/
+}
+.list-cell:filled:selected {
+    /*-fx-background: #00d4df;*/
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #7761d9, #00d4df);
+    -fx-font-family: Verdana;
+    -fx-font-size: 17px;
+    -fx-background-radius: 50px;
+    /*-fx-padding: 10px;*/
+}
+
+

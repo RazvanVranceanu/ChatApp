@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="395.0" minWidth="480.0" prefHeight="395.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Friend's username" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Verdana" size="17.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="15.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="339.0" prefWidth="427.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="sp_main" fitToHeight="true" fitToWidth="true" prefHeight="338.0" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <VBox fx:id="vbox_messages" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="330.0" prefWidth="480.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="20.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tf_message" alignment="TOP_LEFT" prefHeight="29.0" prefWidth="394.0" promptText="Type here" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="button_send" mnemonicParsing="false" onMouseClicked="#sendButtonClicked" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="12.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@send.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
